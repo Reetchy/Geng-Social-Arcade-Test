@@ -283,7 +283,7 @@ body{
     color: #ffffff;
     background-color: #4784F4;
     border: 2px solid #4784F4;
-    padding: 16px 42px;
+    padding: 16px 28px;
     border-radius: 11.8px;
     margin-right: 9px;
     transition: all 100ms linear;
@@ -304,7 +304,7 @@ body{
     color: #121212;
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    padding: 16px 30px;
+    padding: 16px 38px;
     border-radius: 11.8px;
     margin-left: 9px;
     transition: all 100ms linear;
@@ -817,7 +817,7 @@ h2{
     color: #121212;
     background-color: #ffffff;
     border: 1px solid #ffffff;
-    padding: 16px 40px;
+    padding: 16px 28px;
     border-radius: 11.8px;
     margin-right: 9px;
     transition: all 100ms linear;
@@ -831,7 +831,7 @@ h2{
 .secondary-button-v2 a{
     color: #ffffff;
     border: 2px solid #ffffff;
-    padding: 16px 30px;
+    padding: 16px 38px;
     border-radius: 11.8px;
     margin-left: 9px;
     transition: all 100ms linear;
@@ -1575,11 +1575,11 @@ h2{
     }
 
     .primary-button a{
-        padding: 19px 72px;
+        padding: 19px 54px;
     }
 
     .secondary-button a{
-        padding: 19px 60px;
+        padding: 19px 64px;
     }
 
     .secondary-button-v2{
