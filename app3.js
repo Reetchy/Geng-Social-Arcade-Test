@@ -165,6 +165,34 @@ gsap.to(".headline", {
     } 
 })
 
+gsap.to(".scroll", {
+    autoAlpha: 0,
+    duration: 0.3,
+    scrollTrigger: {
+        trigger: ".scroll",
+        start: "top 90%",
+        end: "top 80%",
+        toggleActions: "restart none none reverse",
+        // markers: true,
+        // pin: "#explainer-video",
+        // scrub: true
+    } 
+})
+
+gsap.to(".dreads-scroll", {
+    autoAlpha: 0,
+    duration: 0.3,
+    scrollTrigger: {
+        trigger: ".dreads-scroll",
+        start: "top 80%",
+        end: "top 70%",
+        toggleActions: "restart none none reverse",
+        // markers: true,
+        // pin: "#explainer-video",
+        // scrub: true
+    } 
+})
+
 // gsap.to(".headline", {
 //     autoAlpha: 0,
 //     y: -150,

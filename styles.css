@@ -320,6 +320,53 @@ body{
     background-color: #ffffff;
 }
 
+.scroll{
+    position: absolute;
+    height: 100vh;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    display: none;
+}
+
+.scroll img{
+    width: 20px;
+}
+
+.dreads-scroll{
+    position: absolute;
+    height: 100vh;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    /* display: none; */
+}
+
+.dreads-scroll img{
+    width: 100px;
+}
+
+@keyframes bounce-memoji {
+    0% {top: 85%}
+    50% {top: 100%}
+    100% {top: 85%}
+}
+
+@keyframes scroll-icon {
+    0% {top: 89%}
+    50% {top: 90%}
+    100% {top: 89%}
+}
+
+.bounce{
+    /* width: 100%; */
+    animation: scroll-icon 2s ease-in-out infinite;
+}
+
+.bounce2{
+    animation: bounce-memoji 4s ease-in-out infinite;
+}
+
 .how-to{
     height: 60vh;
     display: flex;
@@ -1321,6 +1368,14 @@ h2{
         visibility: visible;
         z-index: 3;
     }
+    
+    .how-to{
+        height: 80vh;
+    }
+
+    .breaker-text{
+        font-size: 70px;
+    }
 
     .get-in h2{
         font-size: 60px;
@@ -1339,7 +1394,47 @@ h2{
         width: 70%;
         text-align: center;
     }
+
+    .games-cta a{
+        margin: 35px 0 18px;
+    }
+
+    .games-library{
+        height: 517px;
+    }
+
+    .row-repeat-2{
+        margin-top: 120px;
+    }
+
+    .row-repeat-3{
+        margin-top: 240px;
+    }
+
+    @keyframes row-repeat {
+        0% {left: 0px}
+        100% {left: -1010px}
+    }
     
+
+    .game-frame{
+        width: 190px;
+        height: 108px;
+        margin: 0 6px 12px;
+    }
+
+    .game-frame-link{
+        border-radius: 20px;
+        height: 108px;
+    }
+
+    .game-row-item__copy{
+        padding: 0 0 11px 14px;
+    }
+
+    .game-row-item__copy p{
+        font-size: 14px;
+    }    
 
     .footer-logo{
         width: 100%;
