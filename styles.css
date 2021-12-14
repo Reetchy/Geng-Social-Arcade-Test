@@ -935,7 +935,7 @@ h2{
 
 .row-repeat-3{
     display: flex;
-    margin-left: -200px;
+    margin-left: -150px;
     position: absolute;
     margin-top: 486px;
 }
@@ -1043,7 +1043,17 @@ h2{
 
 .animate{
     width: 100%;
-    animation: row-repeat 60s linear infinite;
+    animation: row-repeat 70s linear infinite;
+}
+
+@keyframes row-repeat-2 {
+    0% {left: -2075px}
+    100% {left: 0px}
+}
+
+.animate-2{
+    width: 100%;
+    animation: row-repeat-2 70s linear infinite;
 }
 
 .games-cta{
@@ -1448,6 +1458,11 @@ h2{
         0% {left: 0px}
         100% {left: -1010px}
     }
+
+    @keyframes row-repeat-2 {
+        0% {left: -1010px}
+        100% {left: 0px}
+    }
     
 
     .game-frame{
@@ -1762,6 +1777,11 @@ h2{
     @keyframes row-repeat {
         0% {left: 0px}
         100% {left: -1010px}
+    }
+
+    @keyframes row-repeat-2 {
+        0% {left: -1010px}
+        100% {left: 0px}
     }
     
 
