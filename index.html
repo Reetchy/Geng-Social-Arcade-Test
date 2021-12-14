@@ -88,12 +88,12 @@
                 <!-- Hero CTAs -->
                 <div class="cta-button">
                     <ul>
-                        <li class="primary-button">
-                            <a href="https://geng-games-git-dev-nlabs.vercel.app/games">Create room</a>
+                        <li class="primary-button" onclick="window.parent.postMessage('geng:web:createRoom', '*');">
+                            <a href="#">Create room</a>
                         </li>
 
-                        <li class="secondary-button">
-                            <a href="https://geng-games-git-dev-nlabs.vercel.app/">Join room</a>
+                        <li class="secondary-button" onclick=" window.parent.postMessage('geng:web:joinRoom', '*');">
+                            <a href="#">Join room</a>
                         </li>
                     </ul>
                 </div>

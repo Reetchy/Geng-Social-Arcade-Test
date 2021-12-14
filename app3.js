@@ -88,6 +88,7 @@ if(innerTexts)
         }, speed);
     })
 }
+
 //Slide text animation ends
 
 //Slider text animation responsive
@@ -257,7 +258,7 @@ gsap.to("#explainer-video",  {
 
 ScrollTrigger.matchMedia({
 //desktop
-"(min-width: 769px)": function(){
+"(min-width: 897px)": function(){
 
     // gsap.to(".bg-video", {
     //     duration: 0.3,
@@ -638,7 +639,7 @@ ScrollTrigger.matchMedia({
 
 },
 
-"(max-width: 768px)": function(){
+"(max-width: 896px)": function(){
 
     gsap.to("#explainer-video", {
         duration: 0.3,

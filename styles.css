@@ -279,6 +279,14 @@ body{
     margin: 10px 9px;
 }
 
+.cta-button li{
+    transition: all 200ms ease-in-out;
+}
+
+.cta-button li:active{
+    transform: scale(0.8);
+}
+
 .primary-button a{
     color: #ffffff;
     background-color: #4784F4;
@@ -315,9 +323,15 @@ body{
 }
 
 .secondary-button a:hover{
-    border: 2px solid #4784F4;
-    color: #4784F4;
-    background-color: #ffffff;
+    border: 2px solid #ededed;
+    color: #121212;
+    background-color: #ededed;
+}
+
+.secondary-button a:active{
+    border: 2px solid #cfcfcf;
+    color: #121212;
+    background-color: #cfcfcf;
 }
 
 .scroll{
@@ -1246,6 +1260,25 @@ h2{
     }
 }
 
+@media screen and (max-width: 896px) {
+    .caption h1{
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .text-wrapper{
+        height: 74px;
+    }
+    
+    .text-wrapper , .innerText {
+        line-height: 74px;
+    }
+
+    .innerText h1{
+        padding: 11px;
+    }
+}
+
 @media screen and (max-width: 833px) {
     .wrapper{
         padding: 0 16px;
@@ -1666,15 +1699,17 @@ h2{
     }
 
     .primary-button{
-        margin-bottom: 53px;
+        margin-bottom: 48px;
     }
 
     .primary-button a{
-        padding: 19px 58px;
+        font-size: 18px;
+        padding: 18px 45px;
     }
 
     .secondary-button a{
-        padding: 19px 70px;
+        font-size: 18px;
+        padding: 18px 55px;
     }
 
     .secondary-button-v2{
