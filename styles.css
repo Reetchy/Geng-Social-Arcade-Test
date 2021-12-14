@@ -1918,3 +1918,9 @@ h2{
     }
     
 }
+
+@media screen and (max-width: 320px) {
+    .caption h1{
+        letter-spacing: -3px;
+    }
+}

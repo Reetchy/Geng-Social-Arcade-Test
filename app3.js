@@ -58,21 +58,27 @@ document.body.addEventListener("touchstart", function () {
 },{ once: true });
 //autoplay user guesture ends
 
-//code for slider text animation
+let animatorInterval;
+function innerTextRender(){
+    // console.log(window.innerW)
+    if (animatorInterval != null){
+        clearInterval(animatorInterval)
+    }
+    //code for slider text animation
 let innerTexts = document.querySelectorAll('.text-wrapper .innerText');
 if(innerTexts)
 {
     innerTexts.forEach(innerText=>{
         // make clone of first child start
-        let firstText = innerText.firstElementChild.cloneNode('true');
-        innerText.appendChild(firstText);
+        // let firstText = innerText.firstElementChild.cloneNode('true');
+        // innerText.appendChild(firstText);
         // make clone of first child start
         
         let i           = 0,
             speed       = 1500,
-            distance    = window.innerWidth > 768 ? 120 : (window.innerWidth > 319 ? 74 : 70);
+            distance    = window.innerWidth > 1000 ? 120 : (window.innerWidth > 319 ? 74 : 70);
 
-        setInterval(()=>{
+        animatorInterval = setInterval(()=>{
             let step = innerText.childElementCount;
             innerText.style.transform = `translateY(-${distance * i}px)`;
             innerText.style.transition = "0.5s ease-in-out";
@@ -88,6 +94,11 @@ if(innerTexts)
         }, speed);
     })
 }
+}
+
+innerTextRender()
+window.addEventListener('resize', innerTextRender)
+
 
 //Slide text animation ends
 

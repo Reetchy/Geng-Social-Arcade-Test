@@ -81,6 +81,7 @@
                             <h1>Clubhouse.</h1>
                             <h1>Discord.</h1>
                             <h1>TikTok.</h1>
+                            <h1>Social Audio.</h1>
                         </div>
                     </div>
                 </div>
@@ -185,8 +186,8 @@
             </h2>
 
             <!-- Try it Free Button -->
-            <div class="mid-button">
-                <a href="https://geng-games-git-dev-nlabs.vercel.app/games">Try it free</a>
+            <div class="mid-button" onclick="window.parent.postMessage('geng:web:createRoom', '*');">
+                <a href="#">Try it free</a>
             </div>
         </div>
         <!-- HOW-TO SECTION ENDS -->
@@ -254,20 +255,20 @@
 
             <div class="cta-button-v2">
                 <ul>
-                    <li class="primary-button-v2">
-                        <a href="https://geng-games-git-dev-nlabs.vercel.app/games">Create room</a>
+                    <li class="primary-button-v2" onclick="window.parent.postMessage('geng:web:createRoom', '*');">
+                        <a href="#">Create room</a>
                     </li>
 
-                    <li class="secondary-button-v2">
-                        <a href="https://geng-games-git-dev-nlabs.vercel.app/">Join room</a>
+                    <li class="secondary-button-v2" onclick=" window.parent.postMessage('geng:web:joinRoom', '*');">
+                        <a href="#">Join room</a>
                     </li>
                 </ul>
                 
                 <div class="hintcta">
                     <p class="transparent-text">Got a room code?</p>
 
-                    <p class="link-text">
-                        <a href="https://geng-games-git-dev-nlabs.vercel.app/">Join room</a>
+                    <p class="link-text" onclick=" window.parent.postMessage('geng:web:joinRoom', '*');">
+                        <a href="#">Join room</a>
                     </p>
                 </div>
             </div>
@@ -715,8 +716,8 @@
             </div>
 
             <!-- All Games CTA -->
-            <div class="games-cta">
-                <a href="https://geng-games-git-dev-nlabs.vercel.app/games">See all games</a>
+            <div class="games-cta" onclick="window.parent.postMessage('geng:web:createRoom', '*');">
+                <a href="#">See all games</a>
             </div>
         </div>
         <!-- GAMES MARQUEE SECTION ENDS -->
@@ -731,12 +732,12 @@
 
                     <div class="cta-button-v3">
                         <ul>
-                            <li class="primary-button-v3">
-                                <a href="https://geng-games-git-dev-nlabs.vercel.app/games">Create Room</a>
+                            <li class="primary-button-v3" onclick="window.parent.postMessage('geng:web:createRoom', '*');">
+                                <a href="#">Create Room</a>
                             </li>
 
-                            <li class="secondary-button-v3">
-                                <a href="https://geng-games-git-dev-nlabs.vercel.app/">Join Room</a>
+                            <li class="secondary-button-v3" onclick=" window.parent.postMessage('geng:web:joinRoom', '*');">
+                                <a href="#">Join Room</a>
                             </li>
                         </ul>
                     </div>
