@@ -258,7 +258,7 @@ body{
 }
 
 .cta-button{
-    margin-top: 40px;
+    margin-top: 24px;
     margin-bottom: 108px;
     text-align: center;
     padding-bottom: 100px;
@@ -271,44 +271,46 @@ body{
     list-style-type: none;
 }
 
-.cta-button a{
+.cta-button p{
     text-decoration: none;
     font-family: "Circular Bold";
     font-size: 21px;
     justify-content: space-between;
-    margin: 10px 9px;
+    margin: 8px 9px;
 }
 
 .cta-button li{
     transition: all 200ms ease-in-out;
+    max-width: 200px;
 }
 
 .cta-button li:active{
     transform: scale(0.8);
 }
 
-.primary-button a{
+.primary-button p{
     color: #ffffff;
-    background-color: #4784F4;
-    border: 2px solid #4784F4;
-    padding: 16px 28px;
+    background-color: rgb(71, 132, 244);
+    border: 2px solid rgb(71, 132, 244);
+    padding: 16px 27px;
     border-radius: 11.8px;
     margin-right: 9px;
     transition: all 100ms linear;
+    cursor: pointer;
 }
 
-.primary-button a:hover{
-    background-color: #518EFE;
-    border: 2px solid #518EFE;
+.primary-button p:hover{
+    background-color: rgba(81, 142, 254, 0.9);;
+    border: 2px solid rgba(81, 142, 254, 0.9);
     color: #ffffff;
 }
 
-.primary-button a:active{
-    background-color: #3370E0;
-    border: 2px solid #3370E0;
+.primary-button p:active{
+    background-color: rgba(51, 112, 224, 0.9);
+    border: 2px solid rgba(51, 112, 224, 0.9);
 }
 
-.secondary-button a{
+/* .secondary-button a{
     color: #121212;
     border: 2px solid #ffffff;
     background-color: #ffffff;
@@ -316,22 +318,33 @@ body{
     border-radius: 11.8px;
     margin-left: 9px;
     transition: all 100ms linear;
+} */
+
+.secondary-button p{
+    color: #121212;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 16px 39px;
+    border-radius: 11.8px;
+    margin-left: 9px;
+    transition: all 100ms linear;
+    cursor: pointer;
 }
 
 #explainer-video{
     will-change: transform;
 }
 
-.secondary-button a:hover{
-    border: 2px solid #ededed;
+.secondary-button p:hover{
+    border: 2px solid rgba(237, 237, 237, 0.9);
     color: #121212;
-    background-color: #ededed;
+    background-color: rgba(237, 237, 237, 0.9);
 }
 
-.secondary-button a:active{
-    border: 2px solid #cfcfcf;
+.secondary-button p:active{
+    border: 2px solid rgba(207, 207, 207, 0.9);
     color: #121212;
-    background-color: #cfcfcf;
+    background-color: rgba(207, 207, 207, 0.9);
 }
 
 .scroll{
@@ -361,9 +374,12 @@ body{
 }
 
 @keyframes bounce-memoji {
-    0% {top: 85%}
-    50% {top: 100%}
-    100% {top: 85%}
+    0% {top: 75%}
+    1% {top: 75%}
+    20% {top: 74%}
+    25% {top: 100%}
+    90% {top: 100%}
+    100% {top: 75%}
 }
 
 @keyframes scroll-icon {
@@ -378,7 +394,7 @@ body{
 }
 
 .bounce2{
-    animation: bounce-memoji 4s ease-in-out infinite;
+    animation: bounce-memoji 8s ease-in-out infinite;
 }
 
 .how-to{
@@ -865,16 +881,25 @@ h2{
     list-style-type: none;
 }
 
-.cta-button-v2 a{
+.cta-button-v2 li{
+    transition: all 200ms ease-in-out;
+    max-width: 200px;
+}
+
+.cta-button-v2 li:active{
+    transform: scale(0.8);
+}
+
+.cta-button-v2 p{
     color: #ffffff;
     text-decoration: none;
     font-family: "Circular Bold";
     font-size: 21px;
     justify-content: space-between;
-    margin: 10px 9px;
+    margin: 8px 9px;
 }
 
-.primary-button-v2 a{
+.primary-button-v2 p{
     color: #121212;
     background-color: #ffffff;
     border: 1px solid #ffffff;
@@ -882,26 +907,40 @@ h2{
     border-radius: 11.8px;
     margin-right: 9px;
     transition: all 100ms linear;
+    cursor: pointer;
 }
 
-.primary-button-v2 a:hover{
+.primary-button-v2 p:hover{
     color: #121212;
     background-color: #f5f5f5;
 }
 
-.secondary-button-v2 a{
+.primary-button-v2 p:active{
+    border: 1px solid rgb(207, 207, 207);
+    color: #121212;
+    background-color: rgb(207, 207, 207);
+}
+
+.secondary-button-v2 p{
     color: #ffffff;
     border: 2px solid #ffffff;
-    padding: 16px 38px;
+    padding: 16px 39px;
     border-radius: 11.8px;
     margin-left: 9px;
     transition: all 100ms linear;
+    cursor: pointer;
 }
 
-.secondary-button-v2 a:hover{
-    border: 2px solid #4784F4;
-    color: #4784F4;
-    background-color: #ffffff;
+.secondary-button-v2 p:hover{
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: #121212;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.secondary-button-v2 p:active{
+    border: 2px solid rgb(207, 207, 207);
+    color: #121212;
+    background-color: rgb(207, 207, 207);
 }
 
 .hintcta{
@@ -1617,7 +1656,8 @@ h2{
     }
 
     .how-to{
-        height: 50vh;
+        height: 40vh;
+        min-height: 350px;
     }
 
     .how-to h2{
@@ -1701,30 +1741,42 @@ h2{
         font-size: 16px;
     }
 
+    .p-cta p{
+        width: 90%;
+    }
+
     .cta-button{
-        margin-top: 40px;
+        margin-top: 14px;
     }
 
     .cta-button-v2{
         width: 100%;
+        margin-top: 34px;
     }
 
     .cta-button ul{
         flex-direction: column;
+        align-items: center;
     }
 
-    .primary-button{
-        margin-bottom: 48px;
+    .cta-button li{
+        max-width: 210px;
     }
 
-    .primary-button a{
+    .cta-button p{
         font-size: 18px;
-        padding: 18px 45px;
     }
 
-    .secondary-button a{
-        font-size: 18px;
-        padding: 18px 55px;
+    /* .primary-button{
+        margin-bottom: 16px;
+    } */
+
+    .primary-button p{
+        padding: 16px 41px;
+    }
+
+    .secondary-button p{
+        padding: 18px 51px;
     }
 
     .secondary-button-v2{
@@ -1733,17 +1785,14 @@ h2{
 
     .hintcta{
         display: flex;
-        margin-top: 39px;
+        margin-top: 16px;
         justify-content: center;
     }
 
     .hintcta p{
         width: unset;
         font-size: 16px;
-    }
-
-    .hintcta a{
-        font-size: 16px;
+        
     }
 
     .transparent-text{
@@ -1751,11 +1800,14 @@ h2{
         opacity: 50%;
     }
 
-    .link-text{
-        text-decoration: underline;
+    p.transparent-text{
+        font-family: "Circular Book";
     }
-    .link-text a{
-        text-decoration: none;
+
+    p.link-text{
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        margin-left: 0px;
     }
 
     .games-cta a{
