@@ -376,9 +376,11 @@ body{
 @keyframes bounce-memoji {
     0% {top: 75%}
     1% {top: 75%}
-    20% {top: 74%}
-    25% {top: 100%}
-    90% {top: 100%}
+    10% {top: 74%}
+    15% {top: 100%}
+    40% {top: 100%}
+    60% {top: 92%}
+    95% {top: 92%}
     100% {top: 75%}
 }
 
@@ -394,11 +396,12 @@ body{
 }
 
 .bounce2{
-    animation: bounce-memoji 8s ease-in-out infinite;
+    animation: bounce-memoji 8s ease-out infinite;
 }
 
 .how-to{
-    height: 60vh;
+    height: 45vh;
+    min-height: 510px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1326,6 +1329,122 @@ h2{
     .innerText h1{
         padding: 11px;
     }
+
+    .durag-guy img{
+        width: 165px;
+        right: -220px;
+        top: -30px;
+    }
+
+    .braid-babe img{
+        width: 42px;
+        right: -90px;
+        top: 200px;
+    }
+
+    .bald-babe img{
+        width: 65px;
+        left: -75px;
+        top: 70px;
+    }
+
+    .hat-man img{
+        width: 65px;
+        top: 160px;
+        left: -130px;
+    }
+
+    .dreads img{
+        width: 113px;
+        bottom: 0px;
+        left: -300px;
+    }
+
+    .mask-chic img{
+        width: 188px;
+        top: 100vh;
+        right: -200px;
+    }
+
+    .clean-cut img{
+        width: 60px;
+    }
+
+    .asian-guy{
+        width: 105px;
+    }
+
+    .asian-guy img{
+        width: 54px;
+        margin-left: 380px;
+    }
+
+    .hijab-babe{
+        width: 105px;
+    }
+
+    .hijab-babe img{
+        width: 105px;
+        left: 0px;
+    }
+
+    .how-to{
+        min-height: 400px;
+    }
+
+    .breaker-text{
+        font-size: 60px;
+    }
+
+    .mid-button{
+        margin-top: 50px;
+    }
+
+    .games-cta a{
+        margin: 35px 0 18px;
+    }
+
+    .games-library{
+        height: 517px;
+    }
+
+    .row-repeat-2{
+        margin-top: 120px;
+    }
+
+    .row-repeat-3{
+        margin-top: 240px;
+    }
+
+    @keyframes row-repeat {
+        0% {left: 0px}
+        100% {left: -1010px}
+    }
+
+    @keyframes row-repeat-2 {
+        0% {left: -1010px}
+        100% {left: 0px}
+    }
+    
+
+    .game-frame{
+        width: 190px;
+        height: 108px;
+        margin: 0 6px 12px;
+    }
+
+    .game-frame-link{
+        border-radius: 20px;
+        height: 108px;
+    }
+
+    .game-row-item__copy{
+        padding: 0 0 11px 14px;
+    }
+
+    .game-row-item__copy p{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 833px) {
@@ -1453,10 +1572,15 @@ h2{
     
     .how-to{
         height: 80vh;
+        min-height: 360px;
     }
 
     .breaker-text{
-        font-size: 70px;
+        font-size: 50px;
+    }
+
+    .mid-button{
+        margin-top: 50px;
     }
 
     .get-in h2{
@@ -1656,8 +1780,8 @@ h2{
     }
 
     .how-to{
-        height: 40vh;
-        min-height: 350px;
+        height: 30vh;
+        min-height: 300px;
     }
 
     .how-to h2{
@@ -1669,7 +1793,7 @@ h2{
     }
 
     .mid-button{
-        margin-top: 7vh;
+        margin-top: 54px;
     }
 
     .vp-container-1, .vp-container-2, .vp-container-3{
@@ -1907,7 +2031,8 @@ h2{
     }
 
     .how-to{
-        height: 50vh;
+        height: 40vh;
+
     }
 
     .breaker-text{
@@ -1939,6 +2064,7 @@ h2{
 
     .caption h1{
         font-size: 46px;
+        letter-spacing: -3px;
     }
 
     .text-wrapper{
@@ -1952,6 +2078,11 @@ h2{
 
     .innerText h1{
         padding: 14px;
+    }
+
+    .how-to{
+        height: 40vh;
+        min-height: 300px;
     }
 
     .cta-button-v3 ul{
@@ -1969,10 +2100,4 @@ h2{
         margin-left: 0;
     }
     
-}
-
-@media screen and (max-width: 320px) {
-    .caption h1{
-        letter-spacing: -3px;
-    }
 }

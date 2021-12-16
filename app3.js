@@ -267,6 +267,8 @@ gsap.to("#explainer-video",  {
 
 //ORIGINAL
 
+
+
 ScrollTrigger.matchMedia({
 //desktop
 "(min-width: 897px)": function(){
