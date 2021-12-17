@@ -993,7 +993,6 @@ ScrollTrigger.matchMedia({
 
 
 
-
 // gsap.to("name-1",
 //     y: 400, duration: 2}
 //     scrollTrigger:{
