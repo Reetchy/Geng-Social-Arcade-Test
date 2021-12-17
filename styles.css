@@ -1313,6 +1313,111 @@ h2{
 }
 
 @media screen and (max-width: 896px) {
+    .wrapper{
+        padding: 0 16px;
+        height: 50px;
+    }
+
+    .nav{
+        height: 50px; /*collapsed*/
+        transition: all 0.4s ease;
+        transition-delay: 0.4s;
+        align-items: flex-start;
+    }
+
+    .header-logo p{
+        font-size: 19px;
+        padding-left: 4px;
+        padding-top: 4px;
+    }
+
+    .header-logo img{
+        width: 40px;
+    }
+
+    .menu a{
+        margin: 0;
+    }
+
+    .menu-tray{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 110px;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        width: 80%;
+        transform: translate(12.5%, 0%);
+        margin-top: -5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s, ease .5s;
+        /* transition: opacity .5s ease; */
+    }
+
+    .rule{
+        width: 100%;
+        border: 0.8px solid rgba(225, 225, 225, 0.2);
+    }
+
+    .menu-tray a{
+        padding: 0 0;
+        width: 100%;
+        font-size: 0.87em;
+        font-family: "Circular Book";
+        font-weight: normal;
+    }
+
+    .menu-tray li{
+        width: 100%;
+    }
+
+    .full-width{
+        width: 100%;
+        padding: 0px;
+    } 
+
+    .reveal{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .5s ease;
+        transition-delay: 0.7s;
+    }
+
+    .expand{
+        height: 210px;
+        transition: all 0.4s ease;
+        transition-delay: 0.2s;
+    }
+
+    .collapse{
+        height: 50px;
+    }
+
+    .menucta{
+        display: block;
+    }
+
+    .curtain{
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease;
+    }
+
+    .fade-in{
+        opacity: 1;
+        visibility: visible;
+        z-index: 3;
+    }
+    
     .caption h1{
         font-size: 52px;
         letter-spacing: -2px;
@@ -1330,6 +1435,10 @@ h2{
         padding: 11px;
     }
 
+    .memoji-back{
+        display: none;
+    }
+
     .durag-guy img{
         width: 165px;
         right: -220px;
@@ -1338,20 +1447,20 @@ h2{
 
     .braid-babe img{
         width: 42px;
-        right: -90px;
-        top: 200px;
+        right: -40px;
+        top: 22vh;
     }
 
     .bald-babe img{
         width: 65px;
         left: -75px;
-        top: 70px;
+        top: 12vh; /*formally 70px*/
     }
 
     .hat-man img{
         width: 65px;
-        top: 160px;
-        left: -130px;
+        top: 21vh; /*formally 160px*/
+        left: -90px; /*formally -130px*/
     }
 
     .dreads img{
@@ -1730,20 +1839,20 @@ h2{
 
     .braid-babe img{
         width: 42px;
-        right: -90px;
-        top: 200px;
+        right: -40px; /*formally -90px*/
+        top: 22vh; /*formally 200px*/
     }
 
     .bald-babe img{
         width: 65px;
         left: -75px;
-        top: 70px;
+        top: 12vh;
     }
 
     .hat-man img{
         width: 65px;
-        top: 160px;
-        left: -130px;
+        top: 21vh; /*formally 160px*/
+        left: -90px; /*formally -130px*/
     }
 
     .dreads img{
