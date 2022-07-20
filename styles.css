@@ -859,10 +859,91 @@ h2{
     width: 760px;
 }
 
-.get-in img{
-    width: 530px;
+.friends-row{
+    display: flex;
+    width: 100%;
     margin-bottom: 50px;
+    justify-content: center;
 }
+
+.friends-row img{
+    width: 164px;
+}
+
+.get-in img{
+    /* width: 530px; */
+    /* margin-bottom: 50px; */
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.pulsing-friends{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.ring{
+    position: absolute;
+}
+
+/* .pulsing-ring{ */
+    /* position: absolute; */
+    /* width: 50%; */
+/* } */
+
+@keyframes pulsing-ring {
+    0% {transform: scale(1); opacity: 100%;
+    }
+    5% {transform: scale(1.1); opacity: 90%;
+    }
+    10% {transform: scale(1.2); opacity: 70%;
+    }
+    60% {transform: scale(1.25); opacity: 0%;
+    }
+    100% {transform: scale(1.25); opacity: 0%;
+    }
+}
+
+.pulse{
+    animation: pulsing-ring 3s ease-out infinite;
+}
+
+@keyframes pulsing-ring-2 {
+    0% {transform: scale(1); opacity: 100%;
+    }
+    5% {transform: scale(1.1); opacity: 90%;
+    }
+    10% {transform: scale(1.2); opacity: 70%;
+    }
+    60% {transform: scale(1.25); opacity: 0%;
+    }
+    100% {transform: scale(1.25); opacity: 0%;
+    }
+}
+
+.pulse-2{
+    animation: pulsing-ring 5s ease-out infinite;
+    animation-delay: 5s;
+}
+
+@keyframes pulsing-ring-3 {
+    0% {transform: scale(1); opacity: 100%;
+    }
+    5% {transform: scale(1.1); opacity: 90%;
+    }
+    10% {transform: scale(1.2); opacity: 70%;
+    }
+    60% {transform: scale(1.25); opacity: 0%;
+    }
+    100% {transform: scale(1.25); opacity: 0%;
+    }
+}
+
+.pulse-3{
+    animation: pulsing-ring 5s ease-out infinite;
+    animation-delay: 2s;
+}
+
 
 .get-in p{
     font-family: "Circular Book";
@@ -1711,6 +1792,10 @@ h2{
         text-align: center;
     }
 
+    .friends-row img{
+        width: 120px;
+    }
+
     .games-cta a{
         margin: 35px 0 18px;
     }
@@ -1975,6 +2060,10 @@ h2{
         font-size: 16px;
     }
 
+    .friends-row img{
+        width: 96px;
+    }
+
     .p-cta p{
         width: 90%;
     }
@@ -2138,6 +2227,10 @@ h2{
 
     .get-in img{
         width: 220px;
+    }
+
+    .friends-row img{
+        width: 64px;
     }
 
     .how-to{
